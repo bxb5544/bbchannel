@@ -4,11 +4,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="Henry Paradiz">
-    <meta name="description" content="{block "description"}References, guides, and thoughts on tech.{/block}">
+    <meta name="author" content="Brooke Basile">
+    <meta name="description" content="{block "description"}bbchannel{/block}">
     <link rel="icon" href="/favicon.ico">
 
-    <title>{block "title"}Tech Nexus{/block}</title>
+    <title>{block "title"}bbchannel{/block}</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -28,7 +28,7 @@
             {*<a class="text-muted" href="#">Subscribe</a>*}
           </div>
           <div class="col-4 text-center">
-            <a class="blog-header-logo text-dark" href="/">Tech Nexus</a>
+            <a class="blog-header-logo text-dark" href="/">$ bbchannel</a>
           </div>
           <div class="col-4 d-flex justify-content-end align-items-center">
             {*<a class="text-muted" href="#">
@@ -42,9 +42,9 @@
     <main role="main" class="container">
       <div class="row">
         <div class="col-md-8 blog-main">
-          <h3 class="pb-3 mb-4 font-italic border-bottom">
-            From the Terminal
-          </h3>
+          <h6 class="pb-3 mb-4 font-italic border-bottom">
+            ***
+          </h6>
 		  {block "content"}{/block}
         </div><!-- /.blog-main -->
 
@@ -57,7 +57,6 @@
     <footer class="blog-footer">
 	  <p><a href="#" onclick="window.scrollTo(0,0); return false;">Back to top</a></p>
 	  <p>Page generated in {number_format(technexus\App::getLoadTime(),4)} seconds.</p>
-      <p><small>© {date('Y')} Henry Paradiz - All Rights Reserved</small></p>
     </footer>
 
     <script src="//code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -79,7 +78,7 @@
 		  (function() {
 		    var u="//m.akuj.in/";
 		    _paq.push(['setTrackerUrl', u+'a.php']);
-		    _paq.push(['setSiteId', '2']);
+		    _paq.push(['setSiteId', '3']);
 		    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
 		    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'a.js'; s.parentNode.insertBefore(g,s);
 		  })();
