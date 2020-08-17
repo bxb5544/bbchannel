@@ -1,0 +1,25 @@
+{% extends "blog/layouts/design.twig" %}
+
+{% block title %}{% if Title is defined %}{{ Title }} | {{ parent() }}{% else %}{{ parent() }}{% endif %}{% endblock %}
+
+{% block content %}
+	{% for BlogPost in BlogPosts %}
+		 {% include 'blog/templates/post.twig' %}
+	{% endfor %}
+	{% if before is defined or after is defined %}
+		{% if before is defined %}
+		<nav class="blog-pagination" aria-label="Pagination Go Backwards">
+			<ul class="pagination justify-content-start">
+				<li class="page-item"><a class="btn btn-outline-primary" href="{{path}}?before={{before}}"><i class="fas fa-caret-left"></i> Go Back</a><li>
+			</ul>
+		</nav>
+		{% endif %}
+		{% if after is defined %}
+		<nav class="blog-pagination" aria-label="Pagination Go Forwards">
+			<ul class="pagination justify-content-end">
+				<li class="page-item"><a class="btn btn-outline-primary pull-right" href="{{path}}?after={{after}}">Go Forward <i class="fas fa-caret-right"></i></a><li>
+			</ul>
+		</nav>
+		{% endif %}
+	{% endif %}
+{% endblock %}

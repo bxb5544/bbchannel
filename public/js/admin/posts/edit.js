@@ -37,11 +37,12 @@ var editposts = {
 				'/css/blog.css?'+new Date().getTime(),
 				'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css',
 				'https://fonts.googleapis.com/css?family=Playfair+Display:700,900',
-				'//cdnjs.cloudflare.com/ajax/libs/prism/1.13.0/themes/prism.css',
-				'//cdnjs.cloudflare.com/ajax/libs/prism/1.13.0/themes/prism-twilight.min.css'
+				//'//cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism.css',
+				'/css/prism-vsc-dark-plus.css',
+				//'//cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-twilight.min.css'
 			],
 			plugins: [
-				'advlist autolink lists link image charmap print preview anchor',
+				'advlist autolink lists link image charmap print preview anchor ',
 				'searchreplace visualblocks fullscreen',
 				'insertdatetime media table code codesample wordcount save'
 			],
@@ -64,6 +65,7 @@ var editposts = {
 			],
 			toolbar: 'save | undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | table | fontsizeselect',
 			body_class: 'blog-main',
+			extended_valid_elements: 'script[*]',
 			relative_urls : false,
 			remove_script_host : false,
 			convert_urls : false,
